@@ -1,21 +1,21 @@
-# AI Study Guide Generator
+---
+title: AI Study Guide Generator
+emoji: 🧠
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "4.39.0"
+app_file: app.py
+pinned: false
+---
 
-An AI-powered app that generates personalized study guides using OpenAI and Gradio.
+# 🧠 AI Study Guide Generator
+An interactive web app built with Gradio that helps you generate customized study guides for exams, interviews, or personal learning.
 
-## Features
-- Generates study guides for any topic
-- Uses OpenAI GPT models
-- Interactive Gradio web interface
-- Deployable on Hugging Face Spaces
+Upload a syllabus or topic list, and the app uses AI to create summaries, key points, and revision questions to help you study efficiently.
 
-## How to Run Locally
-Run these commands in your terminal:
-pip install -r requirements.txt
-python app.py
-
-## Deploy to Hugging Face
-1. Push the repo to GitHub.
-2. Create a Space on Hugging Face.
-3. Add a Secret named OPENAI_API_KEY with your API key.
-4. Deploy using:
-gradio deploy --space waigisteve/ai-study-guide-generator
+**Features:**
+- AI-powered summarization
+- Key point extraction
+- Practice questions
+- Customizable difficulty and topics
