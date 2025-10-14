@@ -1,26 +1,21 @@
-# 🎓 AI Study Guide Generator
+# AI Study Guide Generator
 
-An AI-powered Gradio app that generates detailed, structured study guides for any topic using OpenAI.
+An AI-powered app that generates personalized study guides using OpenAI and Gradio.
 
-## Project contents
-- app.py : Gradio + OpenAI app
-- requirements.txt : dependencies
-- README.md : this file
+## Features
+- Generates study guides for any topic
+- Uses OpenAI GPT models
+- Interactive Gradio web interface
+- Deployable on Hugging Face Spaces
 
-## Setup (local)
-1. Create a .env in the project root with:
-   OPENAI_API_KEY=sk-...
-   HF_TOKEN=hf-...
-   GITHUB_TOKEN=ghp-...
+## How to Run Locally
+Run these commands in your terminal:
+pip install -r requirements.txt
+python app.py
 
-2. Install:
-   pip install -r requirements.txt
-
-3. Run:
-   python app.py
-
-## Deploy to Hugging Face Spaces
-After pushing this repo to GitHub, deploy with:
-    gradio deploy --space waigisteve/ai-study-guide-generator
-
-Replace waigisteve and ai-study-guide-generator accordingly.
+## Deploy to Hugging Face
+1. Push the repo to GitHub.
+2. Create a Space on Hugging Face.
+3. Add a Secret named OPENAI_API_KEY with your API key.
+4. Deploy using:
+gradio deploy --space waigisteve/ai-study-guide-generator
